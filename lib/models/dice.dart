@@ -1,14 +1,17 @@
 import 'package:collection/collection.dart';
 import 'dart:math';
 
+import 'package:flutter/material.dart';
 
-class Dice {
+class Dice with ChangeNotifier {
   final List<int?> _values;
   final List<bool> _held;
+  int rollCount = 3;
+  bool _shouldNotify = false;
 
-  Dice(int numDice) 
-  : _values = List<int?>.filled(numDice, null),
-    _held = List<bool>.filled(numDice, false);
+  Dice(int numDice)
+      : _values = List<int?>.filled(numDice, null),
+        _held = List<bool>.filled(numDice, false);
 
   List<int> get values => List<int>.unmodifiable(_values.whereNotNull());
 
@@ -28,6 +31,11 @@ class Dice {
       if (!_held[i]) {
         _values[i] = Random().nextInt(6) + 1;
       }
+    }
+     if (_shouldNotify) {
+      notifyListeners();
+    } else {
+      _shouldNotify = true;
     }
   }
 
