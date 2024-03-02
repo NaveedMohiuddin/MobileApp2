@@ -24,6 +24,7 @@ class Dice with ChangeNotifier {
       _values[i] = null;
       _held[i] = false;
     }
+    notifyListeners();
   }
 
   void roll() {
