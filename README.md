@@ -1,7 +1,11 @@
 # CS 442 MP2: Yahtzee
 
-## Overview
 
+## This Mobile App is built according to the below requirements
+## Overview
+To run this mobile App in your PC clone this repository and install the required packages and run in terminal 
+
+## Requirements
 In this machine problem, your task is to complete the implementation of a single-player [Yahtzee](https://en.wikipedia.org/wiki/Yahtzee) game. Yahtzee is a dice game in which the player rolls five dice up to three times in an attempt to achieve various scoring combinations. The player's score is determined by the sum of the values of the dice when a scoring combination is achieved.
 
 If you're not familiar with Yahtzee, here are some resources:
@@ -175,35 +179,6 @@ You may wish to create additional widgets to further modularize your code. As a 
 Your implementation should not make use of any global variables or functions. All data should be encapsulated in your model classes, and you should use one of the state management techniques discussed in class (e.g., `ChangeNotifier`, `ListenableBuilder`, `provider`) to manage the state of your UI.
 
 
-## Testing
 
-We will be testing your application by building and running it as either a native macOS or Chrome app (which should behave the same). Your app should run without errors or warnings, and should behave as specified above. 
-
-
-## Grading
-
-This machine problem is worth 48 points. Your grade will be based on the following criteria:
-
-- 8 points: the dice rolling mechanism works correctly, including the ability to hold and unhold dice, and the ability to roll up to (but no more than) three times per turn
-
-- 8 points: the scorecard works correctly, including the ability to register a score for a given category just once
-
-- 4 points: scores are correctly calculated for all categories, and the total score is correctly updated
-
-- 4 points: the game correctly ends when all categories have been used, and the final score is correctly displayed
-
-- 4 points: the game state is correctly reset when the user dismisses the final score
-
-- 4 points: your code structure separates layout from data, involving the use of data model classes and avoiding hardcoding game logic/data into widget implementations
-
-- 8 points: your code is well-structured, easy to read, and does a good job modularizing the UI into separate widgets (at a minimum, as suggested in the "Code structure" section above)
-
-- 8 points: your implementation makes effective use of stateful widgets and state management techniques to manage the state of the UI
-
-If your code does not compile, you will receive a zero for the assignment. If your code compiles but does not meet the requirements, you will receive partial credit based on the extent to which it does.
-
-## Submission
-
-To submit your machine problem, commit and push your code to your private GitHub repository shared with us. You can make as many commits and pushes as needed; we will assess the most recent version of your code pushed before the deadline.
-
-If you plan to use late submission days, remember to notify the TAs via email both before the deadline and after your final submission.
+## Result
+![Example profile page](assets/images/Result.png)
