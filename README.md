@@ -1,9 +1,10 @@
 # CS 442 MP2: Yahtzee
 
 
-## This Mobile App is built according to the below requirements
 ## Overview
-To run this mobile App in your PC clone this repository and install the required packages and run in terminal 
+To run this mobile App in your PC clone this repository and install the required packages and run in terminal ```flutter run```
+
+This Mobile App is built according to the below requirements
 
 ## Requirements
 In this machine problem, your task is to complete the implementation of a single-player [Yahtzee](https://en.wikipedia.org/wiki/Yahtzee) game. Yahtzee is a dice game in which the player rolls five dice up to three times in an attempt to achieve various scoring combinations. The player's score is determined by the sum of the values of the dice when a scoring combination is achieved.
